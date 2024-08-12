@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="containerbox">
+        <h2>Age</h2>
+        <div class="date-picker">
+            <label for="dob">Date of birth</label>
+            <input type="date" id="dob">
+        </div>
+        <div class="results">
+            <div class="age-summary">
+                <div class="age-box">
+                    <h3>Age</h3>
+                    <div class="age">
+                        <span id="age-years">0</span> years
+                    </div>
+                    <div class="sub-age">
+                        <span id="age-months">0</span> months | 
+                        <span id="age-days">0</span> days
+                    </div>
+                </div>
+                <div class="next-birthday">
+                    <h3>Next birthday</h3>
+                    <div class="birthday-day" id="next-birthday-day">-</div>
+                    <div class="birthday-time">
+                        <span id="next-birthday-months">0</span> months | 
+                        <span id="next-birthday-days">0</span> days
+                    </div>
+                </div>
+            </div>
+            <div class="summary">
+                <div class="summary-item">
+                    <h4>Years</h4>
+                    <p id="summary-years">0</p>
+                </div>
+                <div class="summary-item">
+                    <h4>Months</h4>
+                    <p id="summary-months">0</p>
+                </div>
+                <div class="summary-item">
+                    <h4>Weeks</h4>
+                    <p id="summary-weeks">0</p>
+                </div>
+                <div class="summary-item">
+                    <h4>Days</h4>
+                    <p id="summary-days">0</p>
+                </div>
+                <div class="summary-item">
+                    <h4>Hours</h4>
+                    <p id="summary-hours">0</p>
+                </div>
+                <div class="summary-item">
+                    <h4>Minutes</h4>
+                    <p id="summary-minutes">0</p>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button onclick="clearInputs()">Clear</button>
+            <button onclick="share()">Share</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+		</body>
+		</html>
